@@ -31,7 +31,7 @@ $(document).ready(function() {
             $("#option1").find("span").text(q.options[0].text);
         } else {
             $(".title").text(q.text);
-            $("#option1").hide();
+            $("#option1").find("span").text("Reintentar");
             $("#option2").hide();
             $("#option3").hide();
         }
@@ -110,6 +110,11 @@ $(document).ready(function() {
 
     $(".option-button").click(function() {
         var btnID = $(this).attr("id");
+        if(currentQuestion.type == "result") {
+            action = questionDictionary[Math.floor(Math.random() * questionDictionary.length)].id;
+            changeQuestion(action);
+            return;
+        }
         var action = "";
         if(btnID == "option1") {
             action = currentQuestion.options[0].action;

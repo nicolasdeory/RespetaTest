@@ -1,33 +1,145 @@
 [
     {
         "type": "question",
-        "id": "test-q",
+        "id": "eres-clown?",
         "title": "¿Eres clown?",
         "options": 
         [
             { 
                 "text": "Si",
-                "action": "test-f"
+                "action": "eres-machango?"
             },
             { 
                 "text": "No",
-                "action": "test-q"
+                "action": "random"
             },
             { 
-                "text": "lol",
-                "action": "test-q"
+                "text": "🤡",
+                "action": "eres-machango?"
             }
         ]
     },
     {
         "type": "follow-up",
-        "id": "test-f",
+        "id": "eres-machango?",
         "title": "¿Eres un Machango?",
         "options": 
         [
             { 
                 "text": "Si",
-                "action": "test-r"
+                "action": "eres-nico?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-nico?",
+        "title": "¿Eres Nico?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "cremitafina"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "te-va-cachimba?",
+        "title": "¿Te va la cachimba?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-pro-cachimba?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-pro-cachimba?",
+        "title": "¿Eres Pro?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-dios?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-dios?",
+        "title": "¿Eres Dios?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "daviddude"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "semana-santa?",
+        "title": "¿Te gusta la Semana Santa?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tienes-switch-ss?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "tienes-switch-ss?",
+        "title": "¿Tienes una Switch?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-main-ganon?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-main-ganon?",
+        "title": "¿Eres Main Ganondorf?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "jotilla"
             },
             { 
                 "text": "No",
@@ -39,5 +151,20 @@
         "type": "result",
         "id": "test-r",
         "text": "Eres un clown"
+    },
+    {
+        "type": "result",
+        "id": "cremitafina",
+        "text": "Eres Cremitafina"
+    },
+    {
+        "type": "result",
+        "id": "daviddude",
+        "text": "Eres Daviddude"
+    },
+    {
+        "type": "result",
+        "id": "jotilla",
+        "text": "Eres Jotilla"
     }
 ]
