@@ -7,6 +7,11 @@ $(document).ready(function() {
     function changeQuestion(newId) {
         currentId = newId;
         currentQuestion = flowDictionary.find(x => x.id == currentId);
+        if (currentQuestion === undefined) {
+            alert("ID de pregunta inválido, seguro que nico se ha equivocado copiando: " + currentId);
+            changeQuestion(questionDictionary[Math.floor(Math.random() * questionDictionary.length)].id);
+            return;
+        }
         transitionQuestion();
     }
 
@@ -125,6 +130,12 @@ $(document).ready(function() {
         }
         if (action == "random"){
             action = questionDictionary[Math.floor(Math.random() * questionDictionary.length)].id;
+            changeQuestion(action);
+            return;
+        }
+        if(action.includes("|")) {
+            var spl = action.split("|");
+            action = spl[Math.floor(Math.random() * spl.length)];
         }
         changeQuestion(action)
     });

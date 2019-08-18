@@ -7,7 +7,7 @@
         [
             { 
                 "text": "Si",
-                "action": "eres-machango?"
+                "action": "eres-machango?|juegas-brawl?"
             },
             { 
                 "text": "No",
@@ -123,7 +123,7 @@
         [
             { 
                 "text": "Si",
-                "action": "eres-main-ganon?"
+                "action": "eres-main-ganon?|viciaste-al-cadence?"
             },
             { 
                 "text": "No",
@@ -148,8 +148,1577 @@
         ]
     },
     {
+        "type": "question",
+        "id": "juegas-brawl?",
+        "title": "¿Juegas al Brawl Stars de forma no irónica?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tienes-switch-igna?|tienes-pc-pepo?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "tienes-switch-igna?",
+        "title": "¿Tienes una Switch?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "lloras-mucho?"
+            },
+            { 
+                "text": "No",
+                "action": "hiciste-video-thanos?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "lloras-mucho?",
+        "title": "¿Lloras mucho?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "igna"
+            },
+            { 
+                "text": "No",
+                "action": "igna-sin-llorar"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "tienes-pc-pepo?",
+        "title": "¿Tienes un PC pepo?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "hiciste-video-thanos?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "hiciste-video-thanos?",
+        "title": "¿Hiciste un video muy denigrante con música de thanos car?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "fernando"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "juegas-fortnite?",
+        "title": "¿Juegas Fortnite?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-dj?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-dj?",
+        "title": "¿Eres DJ?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tienes-spotify?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "tienes-spotify?",
+        "title": "¿Tienes Spotify?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "vicen"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "sabes-nadar?",
+        "title": "¿Sabes nadar?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-sicario?"
+            },
+            { 
+                "text": "No",
+                "action": "como-no-sabes-nadar"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-sicario?",
+        "title": "¿Eres sicario?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-gusta-badayco-helado?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-gusta-badayco-helado?",
+        "title": "¿Te gusta el Badayco Helado?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bada"
+            },
+            { 
+                "text": "No",
+                "action": "bada"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "tate-cachohielo-flash?",
+        "title": "¿Tate, Cachohielo o Flash?",
+        "options": 
+        [
+            { 
+                "text": "Tate",
+                "action": "bea"
+            },
+            { 
+                "text": "Cachohielo",
+                "action": "random"
+            },
+            { 
+                "text": "Flash",
+                "action": "random"
+            }
+            
+        ]
+    },
+    {
+        "type": "question",
+        "id": "juegas-smt?",
+        "title": "¿Juegas SMT?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-gusta-sao-cremita?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-gusta-sao-cremita?",
+        "title": "¿Te gusta SAO?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "random"
+            },
+            { 
+                "text": "No",
+                "action": "odias-sao-cremita?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "odias-sao-cremita?",
+        "title": "¿Odias SAO?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "cremitafina"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "te-gusta-trolear?",
+        "title": "¿Te gusta trolear?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "troleaste-aln?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "troleaste-aln?",
+        "title": "¿Troleaste con las notas de ALN?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "fuiste-mente-aln?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "fuiste-mente-aln?",
+        "title": "¿Fuiste la mente pensante?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "cremitafina"
+            },
+            { 
+                "text": "No",
+                "action": "eres-de-canarias?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-de-canarias?",
+        "title": "¿Eres de Canarias?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bada"
+            },
+            { 
+                "text": "No",
+                "action": "nico"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "cambiaste-carrera?",
+        "title": "¿Te cambiaste de carrera?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "javi"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "estas-en-tuna?",
+        "title": "¿Estás en una tuna?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-mola-tuna?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-mola-tuna?",
+        "title": "¿Te mola?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tokos"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "preguntas-en-clase?",
+        "title": "¿Preguntas mucho en clase?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "buenas-notas?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "buenas-notas?",
+        "title": "¿Sacas buenas notas?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "juegas-hearthstone-tg?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "juegas-hearthstone-tg?",
+        "title": "¿Juegas Hearthstone?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-de-cordoba-tg?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-de-cordoba-tg?",
+        "title": "¿Eres de Córdoba?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "gonza"
+            },
+            { 
+                "text": "No",
+                "action": "estas-en-tuna?"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "trauma-center?",
+        "title": "¿Has jugado al Trauma Center?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "hace-poco-tc?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "hace-poco-tc?",
+        "title": "¿Hace poco?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "nico"
+            },
+            { 
+                "text": "No",
+                "action": "gonza"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "te-gusta-indie?",
+        "title": "¿Te gusta el indie?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "jugando-yakuza?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "jugando-yakuza?",
+        "title": "¿Estás jugando al Yakuza ahora?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "dani"
+            },
+            { 
+                "text": "No",
+                "action": "jugarías-yakuza?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "jugarías-yakuza?",
+        "title": "¿Jugarías ahora?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "dani"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "juegas-lol?",
+        "title": "¿Juegas LoL?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "desinstalaste-lol?|stompeas-nasus?|vicias-lol-noche?|juegas-pantheon-betis?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "desinstalaste-lol?",
+        "title": "¿Lo has desinstalado varias veces?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "lol-por-frustracion?"
+            },
+            { 
+                "text": "No",
+                "action": "stompeas-nasus?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "lol-por-frustracion?",
+        "title": "¿Por frustración?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "hegoa"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "eres-fuera-sevilla?",
+        "title": "¿Eres de fuera de Sevilla?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-de-cordoba?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-de-cordoba?",
+        "title": "¿Eres de Córdoba?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-chica-cordoba?"
+            },
+            { 
+                "text": "No",
+                "action": "eres-de-lebrija?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-de-lebrija?",
+        "title": "¿Y de Lebrija?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "hegoa"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-chica-cordoba?",
+        "title": "¿Eres chica?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "candela"
+            },
+            { 
+                "text": "No",
+                "action": "gonza"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "odias-bts?",
+        "title": "¿Odias a los BTS?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-gusta-kpop?"
+            },
+            { 
+                "text": "No",
+                "action": "te-gusta-kpop?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-gusta-kpop?",
+        "title": "¿Te gusta mucho el Kpop?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-chica-kpop?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-chica-kpop?",
+        "title": "¿Eres chica?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-ceuta-kpop?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-ceuta-kpop?",
+        "title": "¿Eres de Ceuta?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bea"
+            },
+            { 
+                "text": "No",
+                "action": "candela"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "te-emborracharias?",
+        "title": "¿Te pillarías un morado ahora?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-saca-punyu?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-saca-punyu?",
+        "title": "¿Te ha sacado Punyu en algún video?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "vicen"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "te-gusta-hacer-musica?",
+        "title": "¿Te gusta hacer música?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "salchicha-master?|tienes-launchpad?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "salchicha-master?",
+        "title": "¿Le metes salchicha al master?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "y-vendes-spotify?"
+            },
+            { 
+                "text": "No",
+                "action": "y-vendes-spotify?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "y-vendes-spotify?",
+        "title": "¿Y encima vendes en Spotify?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "vicen"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "tienes-hermana?",
+        "title": "¿Tienes una hermana?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-gusta-manualidades?|haces-hama-bea?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-gusta-manualidades?",
+        "title": "¿Te gustan las manualidades?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tocas-piano-bea?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "tocas-piano-bea?",
+        "title": "¿Tocas el piano?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bea"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "a-cuanto-cortesito?",
+        "title": "a cuanto el cortesito",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "gracias-cortesito"
+            },
+            { 
+                "text": "2.99",
+                "action": "random"
+            },
+            {
+                "text": "10 rublos",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "haces-tpose?",
+        "title": "¿Haces T-Pose?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "vivimos-sociedad?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "vivimos-sociedad",
+        "title": "¿Vivimos en una sociedad?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "juegas-mucho-indie?"
+            },
+            { 
+                "text": "Bottom Text",
+                "action": "juegas-mucho-indie?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "juegas-mucho-indie?",
+        "title": "¿Juegas mucho indie?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "dani"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "haces-sticker?",
+        "title": "¿Haces stickers?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-machango-switch?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-machango-switch?",
+        "title": "¿Eres un machango?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tienes-switch-bea?"
+            },
+            { 
+                "text": "No",
+                "action": "tienes-switch-bea?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "tienes-switch-bea?",
+        "title": "¿Tienes Switch?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "viciaste-al-cadence?"
+            },
+            { 
+                "text": "No",
+                "action": "tocas-piano-bea?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "viciaste-al-cadence?",
+        "title": "¿Te viciaste al Cadence?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "igna"
+            },
+            { 
+                "text": "No",
+                "action": "eres-main-ganon-crema?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-main-ganon-crema?",
+        "title": "¿Eres main Ganondorf?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "jotilla"
+            },
+            { 
+                "text": "No",
+                "action": "cremitafina"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "juegas-minecraft?",
+        "title": "¿Juegas Minecraft?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tienes-pollo-abascal?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "tienes-pollo-abascal?",
+        "title": "¿Tuviste un pollo llamado Abascal?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "jotilla"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "stompeas-nasus?",
+        "title": "¿Stompeas Top con Nasus?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "daviddude"
+            },
+            { 
+                "text": "No",
+                "action": "desinstalaste-lol?"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "juegas-smash?",
+        "title": "¿Juegas Smash en tu Switch?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "rivalidad-vicen?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "rivalidad-vicen?",
+        "title": "¿Tienes una rivalidad con Vicen?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "reventaste-a-vicen?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "reventaste-a-vicen?",
+        "title": "¿Le reventaste un día en el LoL?",
+        "options": 
+        [
+            { 
+                "text": "Si, lol",
+                "action": "jotilla"
+            },
+            { 
+                "text": "Si",
+                "action": "jotilla"
+            }, 
+            {
+                "text": "Se dejó ganar",
+                "action": "jotilla"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "te-gusta-rpg?",
+        "title": "¿Te van los RPG?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-metalero-rpg?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-metalero-rpg?",
+        "title": "¿Eres metalero?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "y-de-cordoba-gonza?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "y-de-cordoba-gonza?",
+        "title": "¿Y de Córdoba?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "gonza"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "ves-monas-chinas?",
+        "title": "¿Ves monas chinas?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "sacas-buenas-notas-gonza"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "sacas-buenas-notas-gonza?",
+        "title": "¿Sacas buenas notas?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "gonza"
+            },
+            { 
+                "text": "No",
+                "action": "estas-enfermo"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "vicias-lol-noche?",
+        "title": "¿Te pegas las viciadas hasta las mil?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bailas-en-compañia?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "bailas-en-compañia?",
+        "title": "¿Bailas en una compañía?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "candela"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "bruh?",
+        "title": "¿Bruh?",
+        "options": 
+        [
+            { 
+                "text": "Bruh",
+                "action": "bruhdayco?|fofos?"
+            },
+            { 
+                "text": "Bruh",
+                "action": "bruhdayco?|fofos?"
+            },
+            {
+                "text": "Ah bruh",
+                "action": "bruhdayco?|fofos?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "bruhdayco?",
+        "title": "¿BRUHDAYCO?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "petaste-casa-nico?"
+            },
+            { 
+                "text": "Tu puta madre",
+                "action": "bada"
+            }, 
+            {
+                "text": "No",
+                "action": "petaste-casa-nico?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "fofos?",
+        "title": "¿Fofofofofofofofos?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "petaste-casa-nico?"
+            },
+            { 
+                "text": "Tu puta madre",
+                "action": "bada"
+            }, 
+            {
+                "text": "No",
+                "action": "petaste-casa-nico?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "petaste-casa-nico?",
+        "title": "¿Petaste la casa de nico?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bada"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "eres-darksoulsportugal?",
+        "title": "¿Eres DarkSoulsPortugal?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "conoces-a-dsp?"
+            },
+            { 
+                "text": "No",
+                "action": "conoces-a-dsp?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "conoces-a-dsp?",
+        "title": "¿Conoces al que lleva la cuenta?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "cremitafina"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "tilteas-mucho?",
+        "title": "¿Tilteas mucho?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-va-avicii?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-va-avicii?",
+        "title": "¿Te gusta Avicii?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-de-claret?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-de-claret?",
+        "title": "¿Estuviste en Claret?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "juegas-dbd-igna?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "juegas-dbd-igna?",
+        "title": "¿Juegas al Dead by Daylight?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "nico"
+            },
+            { 
+                "text": "No",
+                "action": "igna"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "juegas-pantheon-betis?",
+        "title": "¿Juegas Pantheon Betis?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "javi"
+            },
+            { 
+                "text": "No",
+                "action": "desinstalaste-lol?"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "te-gusta-krunker?",
+        "title": "¿Te gusta el Krunker?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "conoces-juls?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }, 
+            {
+                "text": "No sé qué es",
+                "action": "no-eres-brigada"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "conoces-juls?",
+        "title": "¿Conoces personalmente a Juls?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "hegoa"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "nadaste-mar?",
+        "title": "¿Has nadado varios kilómetros en mar?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-pone-donkey?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-pone-donkey?",
+        "title": "¿Te pone Donkey Kong Rosa?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bada"
+            },
+            { 
+                "text": "No",
+                "action": "bada-te-pone-dk"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "haces-hama-bea?",
+        "title": "¿Haces Hama?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bea"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "dbd-dead?",
+        "title": "¿Dead?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "dbd-by?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "dbd-by?",
+        "title": "¿By?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "dbd-daylight?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "dbd-daylight?",
+        "title": "¿Daylight?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "cremitafina-trampa"
+            },
+            {
+                "text": "???",
+                "action": "cremitafina-trampa"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "te-gusta-pizza?",
+        "title": "¿Te gusta la pizza?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "pizza-con-piña?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "pizza-con-piña?",
+        "title": "¿Pizza con piña?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tienes-mesa-mezclas?"
+            },
+            { 
+                "text": "No",
+                "action": "tienes-mesa-mezclas?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "tienes-mesa-mezclas?",
+        "title": "¿Tienes una mesa de mezclas?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "vicen"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "tienes-launchpad?",
+        "title": "¿Tienes un Launchpad?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "eres-chica-bn?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "eres-chica-bn?",
+        "title": "¿Eres chica?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bea"
+            },
+            { 
+                "text": "No",
+                "action": "nico"
+            }
+        ]
+    },
+    {
         "type": "result",
-        "id": "test-r",
+        "id": "clown",
         "text": "Eres un clown"
     },
     {
@@ -166,5 +1735,100 @@
         "type": "result",
         "id": "jotilla",
         "text": "Eres Jotilla"
+    },
+    {
+        "type": "result",
+        "id": "igna",
+        "text": "Eres Igna"
+    },
+    {
+        "type": "result",
+        "id": "igna-sin-llorar",
+        "text": "Eres Igna, y ahora dilo sin llorar"
+    },
+    {
+        "type": "result",
+        "id": "fernando",
+        "text": "Eres Fernando"
+    },
+    {
+        "type": "result",
+        "id": "vicen",
+        "text": "Eres Vicen"
+    },
+    {
+        "type": "result",
+        "id": "como-no-sabes-nadar",
+        "text": "Illo, cómo no vas a saber nadar."
+    },
+    {
+        "type": "result",
+        "id": "bada",
+        "text": "Eres Bada"
+    },
+    {
+        "type": "result",
+        "id": "bea",
+        "text": "Eres Bea"
+    },
+    {
+        "type": "result",
+        "id": "nico",
+        "text": "Eres Nico"
+    },
+    {
+        "type": "result",
+        "id": "javi",
+        "text": "Eres Javi"
+    },
+    {
+        "type": "result",
+        "id": "tokos",
+        "text": "Eres Tokos"
+    },
+    {
+        "type": "result",
+        "id": "gonza",
+        "text": "Eres Gonza"
+    },
+    {
+        "type": "result",
+        "id": "dani",
+        "text": "Eres Dani"
+    },
+    {
+        "type": "result",
+        "id": "hegoa",
+        "text": "Eres Hegoa"
+    },
+    {
+        "type": "result",
+        "id": "candela",
+        "text": "Eres Candela"
+    },
+    {
+        "type": "result",
+        "id": "gracias-cortesito",
+        "text": "gracias"
+    },
+    {
+        "type": "result",
+        "id": "estas-enfermo",
+        "text": "Eres un enfermo"
+    },
+    {
+        "type": "result",
+        "id": "no-eres-brigada",
+        "text": "No eres de la brigada"
+    },
+    {
+        "type": "result",
+        "id": "bada-te-pone-dk",
+        "text": "Eres bada, y te pone Donkey Kong Rosa y lo sabes"
+    },
+    {
+        "type": "result",
+        "id": "cremitafina-trampa",
+        "text": "Eres Cremitafina, y has caído en la trampa"
     }
 ]
