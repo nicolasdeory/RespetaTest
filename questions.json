@@ -1,0 +1,43 @@
+[
+    {
+        "type": "question",
+        "id": "test-q",
+        "title": "¿Eres clown?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "test-f"
+            },
+            { 
+                "text": "No",
+                "action": "test-q"
+            },
+            { 
+                "text": "lol",
+                "action": "test-q"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "test-f",
+        "title": "¿Eres un Machango?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "test-r"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "result",
+        "id": "test-r",
+        "text": "Eres un clown"
+    }
+]
