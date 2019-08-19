@@ -720,7 +720,7 @@
         [
             { 
                 "text": "Si",
-                "action": "eres-chica-cordoba?|bailas-en-compañia?"
+                "action": "eres-chica-cordoba?|bailas-en-compañia?|comandos-uhc?"
             },
             { 
                 "text": "No",
@@ -1128,6 +1128,38 @@
             },
             { 
                 "text": "No",
+                "action": "te-gusta-build-battle?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-gusta-build-battle?",
+        "title": "¿Te gusta mucho jugar a Build Battle?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "nico"
+            },
+            { 
+                "text": "No",
+                "action": "comandos-uhc?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "comandos-uhc?",
+        "title": "¿Hiciste los comandos del UHC?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "gonza"
+            },
+            { 
+                "text": "No",
                 "action": "random"
             }
         ]
@@ -1515,7 +1547,7 @@
                 "action": "random"
             }, 
             {
-                "text": "No sé qué es",
+                "text": "No se que es",
                 "action": "no-eres-brigada"
             }
         ]
