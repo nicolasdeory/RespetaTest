@@ -155,7 +155,7 @@
         [
             { 
                 "text": "Si",
-                "action": "tienes-switch-igna?|tienes-pc-pepo?"
+                "action": "tienes-switch-igna?|tienes-pc-pepo?|devil-may-cry?"
             },
             { 
                 "text": "No",
@@ -203,7 +203,7 @@
         [
             { 
                 "text": "Si",
-                "action": "hiciste-video-thanos?"
+                "action": "hiciste-video-thanos?|equipo-segundon?"
             },
             { 
                 "text": "No",
@@ -294,7 +294,7 @@
     {
         "type": "follow-up",
         "id": "eres-sicario?",
-        "title": "¿Eres sicario?",
+        "title": "¿Eres el sicario del grupo?",
         "options": 
         [
             { 
@@ -318,7 +318,7 @@
                 "action": "bada"
             },
             { 
-                "text": "No",
+                "text": "Si",
                 "action": "bada"
             }
         ]
@@ -720,7 +720,7 @@
         [
             { 
                 "text": "Si",
-                "action": "eres-chica-cordoba?"
+                "action": "eres-chica-cordoba?|bailas-en-compañia?"
             },
             { 
                 "text": "No",
@@ -990,7 +990,7 @@
     },
     {
         "type": "follow-up",
-        "id": "vivimos-sociedad",
+        "id": "vivimos-sociedad?",
         "title": "¿Vivimos en una sociedad?",
         "options": 
         [
@@ -1288,7 +1288,7 @@
         [
             { 
                 "text": "Si",
-                "action": "bailas-en-compañia?"
+                "action": "bailas-en-compañia?|haces-fotos-clase-candela?"
             },
             { 
                 "text": "No",
@@ -1660,23 +1660,39 @@
         [
             { 
                 "text": "Si",
-                "action": "tienes-mesa-mezclas?"
+                "action": "tienes-mesa-mezclas-vn?"
             },
             { 
                 "text": "No",
-                "action": "tienes-mesa-mezclas?"
+                "action": "tienes-mesa-mezclas-vn?"
             }
         ]
     },
     {
         "type": "follow-up",
-        "id": "tienes-mesa-mezclas?",
+        "id": "tienes-mesa-mezclas-vn?",
         "title": "¿Tienes una mesa de mezclas?",
         "options": 
         [
             { 
                 "text": "Si",
                 "action": "vicen"
+            },
+            { 
+                "text": "No",
+                "action": "fuiste-a-seattle?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "fuiste-a-seattle?",
+        "title": "¿Has estado en Seattle?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "nico"
             },
             { 
                 "text": "No",
@@ -1713,6 +1729,478 @@
             { 
                 "text": "No",
                 "action": "nico"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "estas-soltero?",
+        "title": "¿Estás o estuviste soltero?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-gusta-fingering?"
+            },
+            { 
+                "text": "No",
+                "action": "como-no-estuviste-soltero"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-gusta-fingering?",
+        "title": "¿Te gusta el fingering?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "finger-drumming?"
+            },
+            { 
+                "text": "No",
+                "action": "finger-drumming?"
+            }, 
+            {
+                "text": "Borra",
+                "action": "finger-drumming?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "finger-drumming?",
+        "title": "Por fingering, refiriéndose a Finger Drumming",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "nico"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "fuiste-a-gamepolis?",
+        "title": "¿Fuiste a Gamépolis?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "hiciste-cosplay?|ganaste-torneo-bs?|estuviste-con-zo?|te-emborrachaste-kuik?|alquilaste-habitacion?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "hiciste-cosplay?",
+        "title": "¿Hiciste cosplay?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "bea"
+            },
+            { 
+                "text": "No",
+                "action": "ganaste-torneo-bs?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "ganaste-torneo-bs?",
+        "title": "¿Ganaste el torneo de Beat Saber?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "nico"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "estuviste-con-zo?",
+        "title": "¿Estuviste con Zero Zone?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "igna"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-emborrachaste-kuik?",
+        "title": "¿Te emborrachaste a base de Küik?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "igna"
+            },
+            { 
+                "text": "No",
+                "action": "hiciste-cosplay?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "alquilaste-habitacion?",
+        "title": "¿Alquilaste la habitación?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "vicen"
+            },
+            { 
+                "text": "No",
+                "action": "estuviste-con-zo?"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "fuiste-cumple-vicen?",
+        "title": "¿Fuiste al cumple de Vicen?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-cachearon-cumple-vicen?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-cachearon-cumple-vicen?",
+        "title": "¿Te cachearon?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "condujiste-vuelta-vicen?"
+            },
+            { 
+                "text": "No",
+                "action": "vicen"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "condujiste-vuelta-vicen?",
+        "title": "¿Conduciste de vuelta a Sevilla?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "igna"
+            },
+            { 
+                "text": "No",
+                "action": "nico"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "tendencia-romper-cosas?",
+        "title": "¿Tienes tendencia a romper las cosas?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "lloras-lol?|te-gusta-pulsar-tecla-lol?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "lloras-lol?",
+        "title": "¿Sueles llorar en las partidas de LoL?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-vacila-gogobeti-david?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-vacila-gogobeti-david?",
+        "title": "¿Te ha vacilado gogobeti?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "daviddude"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-gusta-pulsar-tecla-lol?",
+        "title": "¿Te gusta pulsar una tecla en LoL para no esforzarte mucho?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "te-banean-campeones-lol?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "te-banean-campeones-lol?",
+        "title": "¿Tus amigos suelen banearte campeones que juegas?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "daviddude"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "devil-may-cry?",
+        "title": "Llevas medio año con el Devil May Cry Collection y no te lo pasas?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "copiabas-en-tec-fer?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "copiabas-en-tec-fer?",
+        "title": "¿Copiabas en los exámenes de tecnología?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "equipo-segundon?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "atiendes-clases-luis-suarez?",
+        "title": "¿Atiendes a clases de Luis Suárez?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "random"
+            },
+            { 
+                "text": "No",
+                "action": "rompes-teclados-tic?|copiabas-tec-fer?"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "rompes-teclados-tic?",
+        "title": "¿Rompes teclados jugando a los cabezones en el aula de TIC?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "fernando"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "equipo-segundon?",
+        "title": "¿Eres del equipo segundón de la ciudad?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "fernando"
+            },
+            { 
+                "text": "Si",
+                "action": "fernando"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "ves-jojos?",
+        "title": "¿Desde cuándo ves Jojos?",
+        "options": 
+        [
+            { 
+                "text": "Mucho tiempo",
+                "action": "escribes-v?|horas-guild-wars?"
+            },
+            { 
+                "text": "Poco tiempo",
+                "action": "haces-fotos-clase-candela?"
+            },
+            {
+                "text": "No los veo",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "robas-moviles?",
+        "title": "¿Reconoces que robas móviles en clase?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "candela"
+            },
+            { 
+                "text": "Si",
+                "action": "candela"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "haces-fotos-clase-candela?",
+        "title": "¿Reconoces que nadie puede estar a salvo porque haces muchas fotos en clase?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "robas-moviles?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "escribes-v?",
+        "title": "¿Sueles escribir :'v?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tokos"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "question",
+        "id": "tienes-ci?",
+        "title": "¿Suele decirte la gente que tienes mucho CI?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "horas-guild-wars?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "horas-guild-wars?",
+        "title": "¿Tienes muchas horas dedicadas al Guild Wars?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "stickers-gato-gofre?"
+            },
+            { 
+                "text": "No",
+                "action": "random"
+            }
+        ]
+    },
+    {
+        "type": "follow-up",
+        "id": "stickers-gato-gofre?",
+        "title": "¿Pasabas Stickers de un gato con un gofre en la cabeza?",
+        "options": 
+        [
+            { 
+                "text": "Si",
+                "action": "tokos"
+            },
+            { 
+                "text": "No",
+                "action": "random"
             }
         ]
     },
@@ -1824,11 +2312,16 @@
     {
         "type": "result",
         "id": "bada-te-pone-dk",
-        "text": "Eres bada, y te pone Donkey Kong Rosa y lo sabes"
+        "text": "Eres Bada, te pone Donkey Kong Rosa y lo sabes"
     },
     {
         "type": "result",
         "id": "cremitafina-trampa",
         "text": "Eres Cremitafina, y has caído en la trampa"
+    },
+    {
+        "type": "result",
+        "id": "como-no-estuviste-soltero",
+        "text": "Si hombre, ¿cómo no vas a haber estado soltero nunca?"
     }
 ]
