@@ -2660,7 +2660,7 @@
         [
             { 
                 "text": "EDC",
-                "action": "quien-es-mas-machango-crema?"
+                "action": "regalaste-nico-caña?"
             },
             { 
                 "text": "FP",
@@ -3026,7 +3026,7 @@
     {
         "type": "result",
         "id": "jacobo",
-        "text": "Eres jacobo"
+        "text": "Eres Jacobo"
     },
     {
         "type": "result",
