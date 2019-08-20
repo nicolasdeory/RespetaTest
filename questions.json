@@ -939,7 +939,7 @@
     {
         "type": "follow-up",
         "id": "tienes-collector-chronotrigger?",
-        "title": "¿Tienes una edición de coleccionista del Chrono Trigger?",
+        "title": "¿Tienes la versión japonesa del Chrono Trigger?",
         "options": 
         [
             { 
@@ -2212,7 +2212,7 @@
         [
             { 
                 "text": "Si",
-                "action": "copiabas-en-tec-fer?"
+                "action": "copiabas-tec-fer?"
             },
             { 
                 "text": "No",
@@ -2222,7 +2222,7 @@
     },
     {
         "type": "follow-up",
-        "id": "copiabas-en-tec-fer?",
+        "id": "copiabas-tec-fer?",
         "title": "¿Copiabas en los exámenes de tecnología?",
         "options": 
         [
