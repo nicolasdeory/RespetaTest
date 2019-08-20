@@ -81,4 +81,32 @@ body * {
     user-select: none;
     line-height: 20px;
     padding: 5px;
+    word-break: break-word;
+}
+
+.progress-container {
+    z-index: 11;
+    position: absolute;
+    top: calc(50% + 196px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 400px;
+    height: 40px;
+    
+}
+.progress-title {
+    margin-left: 20px;
+    white-space: nowrap;
+    font-size: 10pt;
+    color: #aaa;
+    text-align: left;
+    min-height: 10pt;
+}
+.progress-bar {
+    margin-top: 5px;
+    width: 0%;
+    height: 15px;
+    background-color: #2bce2b;
+    margin-left: 7px;
+    transition: 0.2s;
 }

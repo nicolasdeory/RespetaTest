@@ -12,6 +12,15 @@ $(document).ready(function() {
             changeQuestion(questionDictionary[Math.floor(Math.random() * questionDictionary.length)].id);
             return;
         }
+        if (!exploredBranches.some(x=>x.id == currentQuestion.id)){
+            exploredBranches.push(currentQuestion);
+            exploredRatio = exploredBranches.length / flowDictionary.length;
+            $(".progress-bar").css("width", "calc("+exploredRatio*100 + '%'+" - 14px");
+            if(exploredRatio == 1) {
+                $(".progress-title").text("¡Has explorado todas las vías!")
+                $(".progress-container").css("top", "calc(50% + 192px)");
+            }
+        }
         transitionQuestion();
     }
 
@@ -93,6 +102,8 @@ $(document).ready(function() {
     var questionDictionary = {}
     var currentQuestion = {}
     var currentId = "";
+    var exploredBranches = [];
+    var exploredRatio = 0;
 
     $('.option-button').mousemove(function(e) { 
         if($(this).hasClass("moving")) return;
