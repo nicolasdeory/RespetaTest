@@ -35,15 +35,21 @@ The question tree is a json file consisting on a list of questions. Each questio
         ]
     }
 ```
-`id` is the action ID of the question.  
-`title` is the text that will be displayed.  
-`options` is a list of one to three possible answers. Each answer has a `text` attribute (the button text), and an `action` attribute.  
-This `action` attribute indicates which question is going to appear next, when the corresponding answer is selected.  
-Inside this attribute, you should specify the ID of the `follow-up` or `result` to display.  
-You can use the `|` token to specify multiple possible outcomes, one of which will be selected at random.  
-Alternatively, you can specify `random` for the quiz to switch to a random question (from the pool of items with type `question`).  
+
+>`id` is the action ID of the question.  
+>`title` is the text that will be displayed.  
+>`options` is a list of one to three possible answers. Each answer has a `text` attribute (the button text), and an `action` attribute.  
+>This `action` attribute indicates which question is going to appear next, when the corresponding answer is selected.  
+>Inside this attribute, you should specify the ID of the `follow-up` or `result` to display.  
+>You can use the `|` token to specify multiple possible outcomes, one of which will be selected at random.  
+>Alternatively, you can specify `random` for the quiz to switch to a random question (from the pool of items with type `question`).  
+
+
+---
 
 - `follow-up`: Functionally identical to `question`, but this type excludes the question from the `question` pool (questions that will be selected at the beginning of the test, or with a `random` action).
+
+---
 
 - `result`: Conclusion of the quiz. The only button that will appear is "Retry", which selects a random `question` from the pool. It is structured as follows:
 ```json
