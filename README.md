@@ -67,4 +67,4 @@ A progress bar indicates how much of the quiz question have been explored/reache
 It is important to structure the question tree in a way that it is possible to reach every possible node, in order for 100% to be reachable.
 
 ## TODO
-- Check for unreachable questions and do not count them towards the 100% achievement.
+- Automatically check for unreachable questions and do not count them towards the 100% achievement
