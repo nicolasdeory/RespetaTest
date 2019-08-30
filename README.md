@@ -6,7 +6,7 @@ You can view a sample setup here: https://nicolasdeory.github.io/SimpleQuiz
   
 ---
 
-The questions are structured in a flow tree fashion, like follows:
+The questions are structured in a flow tree fashion, as follows:
 
 `QUESTION -> n FOLLOW-UPs -> CONCLUSION`
 
