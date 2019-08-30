@@ -1,5 +1,9 @@
 $(document).ready(function() {
     
+    var RETRY_TEXT = "Retry";
+    var EXPLORED_ALL_TEXT = "You have explored every possible route!";
+    var INVALID_ID_TEXT = "Invalid question ID:";
+
     function map(x, in_min, in_max, out_min, out_max) {
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
@@ -8,7 +12,7 @@ $(document).ready(function() {
         currentId = newId;
         currentQuestion = flowDictionary.find(x => x.id == currentId);
         if (currentQuestion === undefined) {
-            alert("ID de pregunta inválido, seguro que nico se ha equivocado copiando: " + currentId);
+            alert(INVALID_ID_TEXT + " " + currentId);
             changeQuestion(questionDictionary[Math.floor(Math.random() * questionDictionary.length)].id);
             return;
         }
@@ -17,7 +21,7 @@ $(document).ready(function() {
             exploredRatio = exploredBranches.length / flowDictionary.length;
             $(".progress-bar").css("width", "calc("+exploredRatio*100 + '%'+" - 14px");
             if(exploredRatio == 1) {
-                $(".progress-title").text("¡Has explorado todas las vías!")
+                $(".progress-title").text(EXPLORED_ALL_TEXT)
                 $(".progress-container").css("top", "calc(50% + 192px)");
             }
         }
@@ -45,7 +49,7 @@ $(document).ready(function() {
             $("#option1").find("span").text(q.options[0].text);
         } else {
             $(".title").text(q.text);
-            $("#option1").find("span").text("Reintentar");
+            $("#option1").find("span").text(RETRY_TEXT);
             $("#option2").hide();
             $("#option3").hide();
         }
