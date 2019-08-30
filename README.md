@@ -4,7 +4,7 @@ A simple starting point for making custom quizzes/tests.
 You can view a sample setup here: https://nicolasdeory.github.io/SimpleQuiz
   
   
--
+---
 
 The questions are structured in a flow tree fashion, like follows:
 
