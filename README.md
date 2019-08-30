@@ -1,9 +1,13 @@
 # SimpleQuiz
-A simple starting point for making custom quizzes/tests.
 
-The questions are structured in a flow tree fashion, like follows:
+You can view a sample setup here: https://nicolasdeory.github.io/SimpleQuiz
+  
+  
+---
 
-QUESTION -> n FOLLOW-UPs -> CONCLUSION
+The questions are structured in a flow tree fashion, as follows:
+
+`QUESTION -> n FOLLOW-UPs -> CONCLUSION`
 
 The question tree is a json file consisting on a list of questions. Each question can have one of three possible types:
 
@@ -30,15 +34,21 @@ The question tree is a json file consisting on a list of questions. Each questio
         ]
     }
 ```
-`id` is the action ID of the question.
-`title` is the text that will be displayed.
-`options` is a list of one to three possible answers. Each answer has a `text` attribute (the button text), and an `action` attribute.
-This `action` attribute indicates which question is going to appear next, when the corresponding answer is selected.
-Inside this attribute, you should specify the ID of the `follow-up` or `result` to display.
-You can use the `|` token to specify multiple possible outcomes, one of which will be selected at random.
-Alternatively, you can specify `random` for the quiz to switch to a random question (from the pool of items with type `question`).
+
+>`id` is the action ID of the question.  
+>`title` is the text that will be displayed.  
+>`options` is a list of one to three possible answers. Each answer has a `text` attribute (the button text), and an `action` attribute.  
+>This `action` attribute indicates which question is going to appear next, when the corresponding answer is selected.  
+>Inside this attribute, you should specify the ID of the `follow-up` or `result` to display.  
+>You can use the `|` token to specify multiple possible outcomes, one of which will be selected at random.  
+>Alternatively, you can specify `random` for the quiz to switch to a random question (from the pool of items with type `question`).  
+
+
+---
 
 - `follow-up`: Functionally identical to `question`, but this type excludes the question from the `question` pool (questions that will be selected at the beginning of the test, or with a `random` action).
+
+---
 
 - `result`: Conclusion of the quiz. The only button that will appear is "Retry", which selects a random `question` from the pool. It is structured as follows:
 ```json
@@ -48,8 +58,8 @@ Alternatively, you can specify `random` for the quiz to switch to a random quest
         "text": "You finished the route 1."
     },
 ```
-`id` is the action ID of the question.
-`text` is the text that will appear when the conclusion is reached.
+>`id` is the action ID of the question.  
+>`text` is the text that will appear when the conclusion is reached.
 
 
 ## Progress Bar
@@ -57,4 +67,4 @@ A progress bar indicates how much of the quiz question have been explored/reache
 It is important to structure the question tree in a way that it is possible to reach every possible node, in order for 100% to be reachable.
 
 ## TODO
-- Check for unreachable questions and do not count them towards the 100% achievement.
+- Automatically check for unreachable questions and do not count them towards the 100% achievement
