@@ -58,8 +58,8 @@ The question tree is a json file consisting on a list of questions. Each questio
         "text": "You finished the route 1."
     },
 ```
-`id` is the action ID of the question.
-`text` is the text that will appear when the conclusion is reached.
+>`id` is the action ID of the question.  
+>`text` is the text that will appear when the conclusion is reached.
 
 
 ## Progress Bar
