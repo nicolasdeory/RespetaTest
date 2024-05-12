@@ -19,6 +19,8 @@ $(document).ready(function() {
         if (!exploredBranches.some(x=>x.id == currentQuestion.id)){
             exploredBranches.push(currentQuestion);
             exploredRatio = exploredBranches.length / flowDictionary.length;
+            // save to local storage
+            localStorage.setItem("exploredBranches", JSON.stringify(exploredBranches));
             $(".progress-bar").css("width", "calc("+exploredRatio*100 + '%'+" - 14px");
             if(exploredRatio == 1) {
                 $(".progress-title").text(EXPLORED_ALL_TEXT)
@@ -158,6 +160,7 @@ $(document).ready(function() {
     $.getJSON("questionsBrig.json", function(data) {
         flowDictionary = data;
         questionDictionary = flowDictionary.filter(x => x.type == "question");
+        exploredBranches = JSON.parse(localStorage.getItem("exploredBranches")) || [];
         changeQuestion(questionDictionary[Math.floor(Math.random() * questionDictionary.length)].id);
     });
 });
