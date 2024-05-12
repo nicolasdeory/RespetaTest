@@ -155,7 +155,7 @@ $(document).ready(function() {
         changeQuestion(action)
     });
 
-    $.getJSON("questions.json", function(data) {
+    $.getJSON("questionsBrig.json", function(data) {
         flowDictionary = data;
         questionDictionary = flowDictionary.filter(x => x.type == "question");
         changeQuestion(questionDictionary[Math.floor(Math.random() * questionDictionary.length)].id);
